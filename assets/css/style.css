@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+}
+
+#main {
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 0% 50%;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    margin-top: 7%;
+    /*grid-template-areas: "quadrante1 quadrante2" "principal principal" "quadrante3 quadrante4" ;*/
+}
+
+.quadrante1 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 50%;
+    border: transparent;
+    background-color: rgb(184, 184, 0);
+}
+
+.quadrante1Shine {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-top-left-radius: 40%;
+    border: transparent;
+    background-color: yellow;
+}
+
+.quadrante2 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 50%;
+    background-color:purple;
+    
+}
+
+.quadrante2Shine {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 1;
+    height: 60%;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-top-right-radius: 40%;
+    background-color: blueviolet;
+}
+
+.quadrante3 {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    background-color: rgb(0, 0, 150);
+}
+
+.quadrante3Shine {
+    grid-column-start: 1;
+    grid-column-end: 1;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 100%;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    border-bottom-left-radius: 40%;
+    border-bottom-left-radius: 100%;
+    background-color: blue;
+}
+
+.quadrante4 {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    background-color: rgb(117, 76, 0);
+}
+
+.quadrante4Shine {
+    grid-column-start: 2;
+    grid-column-end: 2;
+    grid-row-start: 3;
+    grid-row-end: 3;
+    height: 100%;
+    width: 100%;
+    border-top-right-radius: 50%;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 40%;
+    border-bottom-right-radius: 100%;
+    background-color: orange;
+}
+
+#principal {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: black;
+    color: white;
+    width: 250px;
+    height: 250px;
+    border-radius: 150px;
+    border: 5px dotted white;
+    z-index: 1;
+}
+
+#principalTextos {
+    font-family: Barlow;
+    letter-spacing: 1px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.buttons {
+    border-radius: 40%;
+    height: 32px;
+}
+
+#modalExplain {
+    display: flex;
+    position: fixed;
+    top: 100px;
+    left: 50px;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    background-color: green;
+    z-index: 5;
+    background-image: url('../imgs/interregocao.png');
+    background-size: 70%;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: transparent;
+}   
+
+#GmExpln {
+    display: none;
+}
+/*
+@media (min-width: 640px) {
+    body {
+        transform: scale(1.2);
+    }
+}
+@media (min-width: 800px) {
+    body {
+        transform: scale(2);
+    }
+}*/
